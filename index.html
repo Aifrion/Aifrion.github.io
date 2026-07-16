@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brian Yee — Robotics · HRI · Machine Learning</title>
+  <meta name="description" content="Brian Yee is an M.S. Computer Science student at UC San Diego working across robotics, human-robot interaction, and applied machine learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%237d5a3c%22/><text x=%2250%22 y=%2268%22 font-size=%2252%22 text-anchor=%22middle%22 fill=%22%23f6f3ec%22 font-family=%22serif%22>BY</text></svg>" />
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a href="#top" class="nav-name">Brian Yee</a>
+      <nav class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="https://www.linkedin.com/in/brian-yee-4308a0200/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:b4yee@ucsd.edu" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-rule" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-kicker">M.S. Computer Science · UC San Diego</p>
+        <h1 class="hero-title">Hello!</h1>
+        <p class="hero-sub">
+          I'm Brian Yee, an M.S. Computer Science student at UC San Diego. I'm looking
+          for research opportunities in robotics and embodied AI, where engineering
+          meets the needs of humans.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#work">Featured work</a>
+          <a class="btn btn-line" href="mailto:b4yee@ucsd.edu">b4yee@ucsd.edu</a>
+        </div>
+      </div>
+      <img class="hero-photo" src="assets/headshot.png" alt="Portrait of Brian Yee" />
+    </section>
+
+    <!-- ============ FEATURED: JACK BOT ============ -->
+    <section class="section" id="work">
+      <div class="section-head">
+        <span class="section-index">01</span>
+        <h2>HRI: Jack Bot</h2>
+        <p>An embodied party-game host, built on the Mini Pupper quadruped.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-media reveal">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/AlHjwDVaU-k?si=nlfYU5sUU0lT26Cz"
+              title="Jack Bot — Mini Pupper party-game host demo"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+          <p class="media-caption">Demo: Jack Bot hosting a round — speech, player tracking, and elimination walk-up.</p>
+        </div>
+
+        <div class="feature-text reveal">
+          <p class="feature-meta">CSE 276B · Human-Robot Interaction · Dr. Laurel Riek, UC San Diego</p>
+          <p>
+            Jackbox-style party games put the game master on a screen. Jack Bot puts it in
+            the room. Following the <em>"phygital" play</em> literature, our team turned the
+            Mini Pupper into an embodied game host for a Mafia-style party game: it narrates
+            with text-to-speech (Piper-TTS), finds players by shirt color with OpenCV
+            color-thresholding, and physically walks up to whoever gets eliminated.
+          </p>
+          <ul class="tags">
+            <li>Mini Pupper</li><li>ROS2</li><li>TypeScript</li><li>socket.io</li><li>React</li><li>Piper-TTS</li><li>OpenCV</li><li>UEQ-S</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="section" id="research">
+      <div class="section-head">
+        <span class="section-index">02</span>
+        <h2>Research</h2>
+        <p>Machine learning for health, at UC Irvine.</p>
+      </div>
+
+      <article class="panel reveal">
+        <h3>Identifying Sleep Behavior Subtypes Among Dementia Caregivers (Formal Experience)</h3>
+        <p class="panel-meta">Unsupervised clustering on wearable sensor data · UC Irvine · unpublished</p>
+        <p>
+          Dementia caregivers carry an enormous, often invisible burden — and it shows up
+          in how they sleep. Using wearable sensor data, this work applied unsupervised
+          clustering to uncover distinct sleep behavior subtypes among caregivers.
+        </p>
+        <ul class="panel-points">
+          <li>
+            Aligned sleep data preprocessing and feature selection with the standardized
+            <strong>Ru-SATED sleep health framework</strong>, keeping the analysis robust
+            and theoretically grounded.
+          </li>
+          <li>
+            Engineered key metrics for sleep pattern analysis — including daily and
+            aggregate <strong>sleep midpoint</strong> calculations — to quantify sleep
+            regularity and timing variability for clustering.
+          </li>
+        </ul>
+        <ul class="tags">
+          <li>Unsupervised Learning</li><li>Wearable Sensors</li><li>Digital Health</li><li>Feature Engineering</li>
+        </ul>
+      </article>
+
+      <article class="panel reveal">
+        <h3>Dual-Channel CNN for Rhinoplasty Detection (Personal)</h3>
+        <p class="panel-meta">Deep learning · computer vision · independent project</p>
+        <p>
+          Identified a gap in automated rhinoplasty detection, framed the problem, and
+          designed an evaluation framework comparing single-image, full-face, and
+          dual-input approaches. Built and trained a PyTorch dual-input convolutional
+          neural network on paired before-and-after facial images, reaching
+          <strong>74% weighted accuracy</strong> and outperforming baseline approaches.
+        </p>
+        <ul class="tags">
+          <li>PyTorch</li><li>CNNs</li><li>Evaluation Design</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="section-head">
+        <span class="section-index">03</span>
+        <h2>Industry Experience</h2>
+        <p>Where I've learned to ship.</p>
+      </div>
+
+      <div class="timeline">
+
+        <article class="entry reveal">
+          <div class="entry-when">Summer 2026 — present</div>
+          <div class="entry-body">
+            <h3>Product Management Intern · <span class="org">HashiCorp / IBM</span></h3>
+            <p>
+              Building a Slackbot that uses retrieval-augmented generation powered by IBM
+              watsonx — engineers ask it questions about HashiCorp's infrastructure and the
+              teams that own it, and get grounded answers instead of hunting through docs
+              and org charts.
+            </p>
+            <ul class="tags">
+              <li>RAG</li><li>watsonx</li><li>Slack API</li><li>Product Management</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry reveal">
+          <div class="entry-when">June — December 2025</div>
+          <div class="entry-body">
+            <h3>AI Engineer Intern · <span class="org">Ingram Micro</span></h3>
+            <p>
+              Scoped and built a Data Enrichment Engine using Google's ADK and Vertex AI to
+              automatically enrich thousands of vendor product listings — improving semantic
+              search accuracy by <strong>23%</strong> and cutting retrieval latency by
+              <strong>15%</strong>.
+            </p>
+            <ul class="tags">
+              <li>Vertex AI</li><li>Google ADK</li><li>Semantic Search</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <span class="section-index">04</span>
+        <h2>About</h2>
+        <p>Background and toolkit.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            What draws me to research is simple: I want to work on things that help
+            people.           
+          </p>
+          <p>
+            I'm currently pursuing my M.S. in Computer Science at UC San Diego and
+            actively seeking research opportunities in robotics, HRI, and machine
+            learning where I can keep building toward that.
+          </p>
+        </div>
+
+        <div class="about-facts reveal">
+          <div class="fact">
+            <div class="fact-label">Education</div>
+            <div class="fact-value">M.S. Computer Science, UC San Diego <span class="fact-sub">expected June 2027</span></div>
+            <div class="fact-value">B.S. Computer Science, UC Irvine <span class="fact-sub">June 2025</span></div>
+          </div>
+          <div class="fact">
+            <div class="fact-label">Relevant coursework</div>
+            <div class="fact-value">Probabilistic Learning · Human-Robot Interaction · Digital Image Processing · AI in Medicine and Biology · Computer Systems · Algorithm Design</div>
+          </div>
+          <div class="fact">
+            <div class="fact-label">Technical</div>
+            <div class="fact-value">Python · TypeScript · Go · SQL · PyTorch · OpenCV · React · socket.io · Vertex AI · Docker · Linux · GCP</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="contact-rule" aria-hidden="true"></div>
+      <h2>Get in touch.</h2>
+      <div class="contact-actions">
+        <a class="btn btn-solid btn-lg" href="mailto:b4yee@ucsd.edu">b4yee@ucsd.edu</a>
+        <a class="btn btn-line btn-lg" href="https://www.linkedin.com/in/brian-yee-4308a0200/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
